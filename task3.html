@@ -1,0 +1,89 @@
+<html>
+<head>
+<style type="text/css">
+
+#top {
+
+width:500px;;
+height:300px;
+background-image:url("pic1.jpeg");
+
+
+
+}
+
+#first {
+
+width:150px;
+height:150px;
+background-color:blue;
+float:left;
+margin:5px;
+
+
+}
+#second {
+
+width:150px;
+height:150px;
+background-color:green;
+float:left;
+margin:5px;
+
+}
+#third {
+
+width:150px;
+height:150px;
+background-color:brown;
+float:left;
+margin:5px;
+
+
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div id="top">
+
+</div>
+
+<div id="cent">
+<img id="first" src="pic5.jpeg" >
+<img id="second" src="pic3.jpeg" >
+<img id="third" src="pic4.jpeg" >
+</div>
+<script type="text/javascript">
+
+document.getElementById("first").onmouseover=function() {
+var x = document.getElementById("first").src;
+var k=x.slice(34,43);
+ document.getElementById("top").style.backgroundImage="url('"+k+"')";
+
+}
+
+
+document.getElementById("second").onmouseover=function() {
+var x = document.getElementById("second").src;
+var k=x.slice(34,43);
+ document.getElementById("top").style.backgroundImage="url('"+k+"')";
+
+}
+
+document.getElementById("third").onmouseover=function() {
+var x = document.getElementById("third").src;
+var k=x.slice(34,43);
+ document.getElementById("top").style.backgroundImage="url('"+k+"')";
+
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<html>
+<head>
+
+<title>second</title>
+
+
+<style type="text/css">
+
+#first {
+
+height:300px;
+width:300px;
+background-image:url("pic1.jpeg");
+
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+<div id="first">
+
+
+ 
+
+</div>
+
+
+<script type="text/javascript">
+
+var arr=["pic2.jpeg","pic3.jpeg","pic4.jpeg","pic5.jpeg","pic6.jpeg"];
+
+
+
+document.getElementById("first").onmouseover=function() {
+
+
+var a=Math.floor(Math.random()*6);
+//alert(arr[a]);
+
+tt = arr[a];
+document.getElementById("first").style.backgroundImage = "url('"+ tt +"')";
+
+
+}
+
+</script>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
